@@ -12,6 +12,7 @@ void printSpell(int n)
     printSpell(n/10);
     int number=n%10;
     cout<<s[number]<<" ";
+   //or cout<<str[n%10];
 }
 
 
