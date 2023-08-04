@@ -6,6 +6,7 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 Example 2:
 Input: nums = [0,1]
 Output: [[0,1],[1,0]]
+**** Number of Permutations = n! where n = number of elements or size of array or vector //
 */
 class Solution {
 public:
