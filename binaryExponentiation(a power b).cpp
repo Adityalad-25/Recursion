@@ -20,3 +20,4 @@ int main()
     int ans = power(a,b);
     cout<<ans;
 }
+//time complexity : - o(log b )
