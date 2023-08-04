@@ -1,4 +1,5 @@
 // Problem link :- https://www.codingninjas.com/studio/problems/permutations-of-a-string_985254
+// leetcode link :- https://leetcode.com/problems/permutations/description/
 
 #include<bits/stdc++.h>
 
