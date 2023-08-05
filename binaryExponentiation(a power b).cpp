@@ -1,23 +1,45 @@
 #include<iostream>
+#define int long long int
 using namespace std;
 
-int power(int a, int b){
-    if(b==0) return 1;
-    if(b==1) return a;
-    
-    int x = power(a,b/2);
-    //odd power
-    if(b&1) return a*x*x;
-    //even power
-    else return x*x;
+// recursive function
+int binpow(int a , int b){
+
+	//base case
+	if(b==0) return 1;
+
+	// calculating b/2 
+	int x = binpow(a,b/2);
+
+	//odd power
+	if(b&1) return a*x*x;
+	//even power
+	else return x*x;
+
 }
 
-int main()
+int binPowTwo(int n)  // 2^n ;
 {
-    int a,b;
-    cin>>a>>b;
-    
-    int ans = power(a,b);
-    cout<<ans;
+	if(n==0) return 1;
+
+	int ans = binPowTwo(n/2);
+    //for odd power
+	if(n&1) return 2*ans*ans;
+    // for even power
+	else return ans*ans;
+
 }
-//time complexity : - o(log b )
+
+
+
+int32_t main()
+{
+	// int a,b;
+	// cin>>a>>b;
+
+	// int ans = binpow(a,b);
+	// cout<<ans;
+	int n;
+	cin>>n;
+	cout<<binPowTwo(n);
+}
