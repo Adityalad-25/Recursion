@@ -15,7 +15,7 @@ int sum(int n){
 
 	// int last_digit = n%10;
 	// int remaining = n/10;
-
+       //cout<<n/10<<" "<<n%10<<endl;  // how digits get divided in each step
 	return sum(n/10)+n%10;
 }
 
