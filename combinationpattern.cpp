@@ -24,14 +24,15 @@ void patternPrint(int n)
     }
 
    
-	for(int i = 1 ;i<=n;i++){ // print first line by urself
+	for(int i = 1 ;i<=n;i++){ // print first line by urself -> 1 2 4 5.....
 		cout<<i<<" ";
 	}
 	cout<<"\n";
 
-	patternPrint(n-1); //Trust and call func for middle part
+	patternPrint(n-1); //Trust and call func for middle part 
+	
 
-	for(int i = 1 ;i<=n;i++){ // print last line by urself
+	for(int i = 1 ;i<=n;i++){ // print last line by urself -> 1 2 3 4 5......
 		cout<<i<<" ";
 	}
 	cout<<"\n";
