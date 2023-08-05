@@ -1,45 +1,30 @@
 #include<iostream>
+#include<bits/stdc++.h>
 #define int long long int
 using namespace std;
 
-// recursive function
-int binpow(int a , int b){
+const int MOD = 1e9+7; 
 
-	//base case
-	if(b==0) return 1;
-
-	// calculating b/2 
-	int x = binpow(a,b/2);
-
-	//odd power
-	if(b&1) return a*x*x;
-	//even power
-	else return x*x;
-
-}
-
-int binPowTwo(int n)  // 2^n ;
+int power(int a, int b)
 {
-	if(n==0) return 1;
+    if (b == 0) return 1;
 
-	int ans = binPowTwo(n/2);
-    //for odd power
-	if(n&1) return 2*ans*ans;
-    // for even power
-	else return ans*ans;
+    int x = power(a, b / 2) % MOD;
+    int result = (x * x) % MOD;
 
+    if (b & 1)
+        result = (result * a) % MOD;
+
+    return result;
 }
-
-
 
 int32_t main()
 {
-	// int a,b;
-	// cin>>a>>b;
+    int a, b;
+    cin >> a >> b;
 
-	// int ans = binpow(a,b);
-	// cout<<ans;
-	int n;
-	cin>>n;
-	cout<<binPowTwo(n);
+    int ans = power(a, b);
+    cout << ans;
+
+    return 0;
 }
