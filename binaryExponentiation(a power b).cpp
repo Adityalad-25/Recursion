@@ -18,6 +18,35 @@ int power(int a, int b)
     return result;
 }
 
+//gfg :- https://practice.geeksforgeeks.org/problems/abset-25327/1 
+//check properly for modular arithmetic case 
+// const long long int MOD = 1e9+7;
+
+// class Solution{   
+// public:
+//     long long int power(int a, long long int b) { 
+        
+//         if (b == 0) {
+//             return 1;
+//         }
+            
+//         if (b == 1) {
+//             return a;
+//         }
+        
+//         long long int c = power(a, b/2);
+            
+//         if (b % 2 == 0) {
+//             return (c * c) % MOD;
+//         } 
+        
+//         else {
+//             return (((c * c) % MOD) * a) % MOD;
+//         }
+//     }
+// 
+//};
+
 int32_t main()
 {
     int a, b;
