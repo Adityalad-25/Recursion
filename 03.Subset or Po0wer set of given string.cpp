@@ -10,7 +10,9 @@ void printSub(string str, string curr, int index)
 		return;
 	}
 
+	// not include s[i] in the array
 	printSub(str, curr, index + 1);
+	//include s[i] in the array
 	printSub(str, curr+str[index], index + 1);
 }
 	
