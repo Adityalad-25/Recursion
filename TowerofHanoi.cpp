@@ -48,7 +48,7 @@ class Solution{
           //  // move n-1 disks from a(from) to b(to) first by recursive call and c is used as auxillary
           //  //move last disk from a to c then; here b is used as auxillary
           //  //then finally using a as auxillary  move  disk from b to c by recursive call
-          // // 
+         
               
           
    
@@ -78,8 +78,8 @@ class Solution{
         }
       
         count = count + toh(N-1,from,aux,to);  //move n-1 disks 'from' to 'to' using aux 
-        cout<<"move disk " << N<<" from rod " << from << " to rod "<<to<<endl;
-        count = count + toh(N-1,aux,to,from);
+        cout<<"move disk " << N<<" from rod " << from << " to rod "<<to<<endl; //move last disk 'from' to 'to'
+        count = count + toh(N-1,aux,to,from);  // move n-1 disks from 'aux' to 'from'
         return count;
     }
 
