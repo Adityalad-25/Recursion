@@ -30,7 +30,7 @@ as follows in the example and total
 7 steps will be taken.
 */
 
-
+// number of steps = 2^n -1 ; where n is number of disks
 
 
 //{ Driver Code Starts
@@ -80,7 +80,7 @@ class Solution{
         count = count + toh(N-1,from,aux,to);  //move n-1 disks 'from' to 'to' using aux 
         cout<<"move disk " << N<<" from rod " << from << " to rod "<<to<<endl; //move last disk 'from' to 'to'
         count = count + toh(N-1,aux,to,from);  // move n-1 disks from 'aux' to 'from'
-        return count;
+        return count; //number of steps = 2^n -1 ; where n is number of disks
     }
 
 };
