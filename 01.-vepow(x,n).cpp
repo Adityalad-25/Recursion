@@ -1,5 +1,7 @@
-/*link -> https://leetcode.com/problems/powx-n/description/
-Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+/*link leeetcode -> https://leetcode.com/problems/powx-n/description/
+link ninjas -> https://www.codingninjas.com/studio/problems/find-x-raised-to-power-n-_626560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+
+Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
 Example 1:
 Input: x = 2.00000, n = 10
 Output: 1024.00000
