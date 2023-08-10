@@ -22,9 +22,9 @@ public:
             ln = -ln;
         }
         double ans = myPow(x,ln/2); //remember to do ln/2 not x/2;
-        if(n&1)
+        if(n&1) //odd power
         return x*ans*ans;
-        else return ans*ans;
+        else return ans*ans; //even power
 
 
     }
