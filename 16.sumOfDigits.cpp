@@ -1,6 +1,4 @@
-#include<iostream>
-using namespace std;
-
+/*
 /*
   example :- 1232 
   sum(123)+2;
@@ -9,6 +7,10 @@ using namespace std;
   1+2;
   0+1
    */
+*/
+#include<iostream>
+using namespace std;
+
 int sum(int n){
 	//base case
     if(n==0) return 0;
