@@ -10,7 +10,8 @@ Sample Output 1:
 a ab abc ac b bc c
 Explanation Of Sample Input 1:
 All possible subsequences of abc are :  
-“a” , “b” , “c” , “ab” , “bc” , “ac”, “abc”
+“a” , “b” , “c” , “ab” , “bc” , “ac”, “abc” 
+Total number of subsequences = 2^n including empty string where n is size of given string 
 */
 
 #include <bits/stdc++.h> 
@@ -18,7 +19,7 @@ All possible subsequences of abc are :
 void solve(string str,int pos,string output,vector<string>&ans){
 
 	if(pos>=str.length()){
-		if(output.length()>0)
+		if(output.length()>0)  // to exclude the empty string 
 		{ans.push_back(output);}
 		return;
 	}
