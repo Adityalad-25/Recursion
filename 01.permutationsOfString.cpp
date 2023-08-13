@@ -21,7 +21,7 @@ public:
            for(int i = pos ; i<s.size() ; i++){
                swap(s[i],s[pos]);
                solve(s,ans,pos+1);
-               swap(s[i],s[pos]);
+               swap(s[i],s[pos]); //backtracking
            }
        }
    
