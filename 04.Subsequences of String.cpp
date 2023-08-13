@@ -13,3 +13,27 @@ All possible subsequences of abc are :
 “a” , “b” , “c” , “ab” , “bc” , “ac”, “abc”
 */
 
+#include <bits/stdc++.h> 
+
+void solve(string str,int pos,string output,vector<string>&ans){
+
+	if(pos>=str.length()){
+		if(output.length()>0)
+		{ans.push_back(output);}
+		return;
+	}
+    // not include
+	 solve(str,pos+1,output,ans);
+	 //include
+	 output.push_back(str[pos]);
+	 solve(str,pos+1,output,ans);
+     //output.pop_back();
+}
+vector<string> subsequences(string str){
+	vector<string> ans;
+	string output = "";
+	int pos;
+	solve(str,0,output,ans);
+	return ans;
+	
+}
