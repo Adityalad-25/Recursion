@@ -13,7 +13,7 @@ All possible subsequences of abc are :
 “a” , “b” , “c” , “ab” , “bc” , “ac”, “abc” 
 Total number of subsequences = 2^n including empty string where n is size of given string 
 */
-
+// Time-Complexity :- o(2^n);
 #include <bits/stdc++.h> 
 
 void solve(string str,int pos,string output,vector<string>&ans){
