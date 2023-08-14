@@ -4,10 +4,8 @@
 
 void rev(string &s,int i, int j){
      //base case
-     if(i>j) 
-	 {
-		 return;
-	 }
+     if(i>j)
+       return;
 	 swap(s[i],s[j]);
 	 i++;
 	 j--;
